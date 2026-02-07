@@ -39,21 +39,33 @@ Le pipeline se compose des étapes suivantes :
 
 ├── data/
 │ ├── raw/ # Fichiers sources (xlsx)
+
 │ ├── clean/ # Données nettoyées
+
 │ ├── dedup/ # Données dédoublonnées
+
 │ └── output/ # Livrables métiers
 │
+
 ├── scripts/
+
 │ ├── clean_erp.py
+
 │ ├── clean_liaison.py
+
 │ ├── clean_web.py
+
 │ ├── zscore_identification.py
+
 │ └── export_excel.py
 │
+
 ├── kestra/ # Diagrammes et fichiers Kestra
+
 │ └── Diagramme-des-flux.png
 │
 ├── flow.yaml # Workflow Kestra
+
 └── README.md
 
 ---
