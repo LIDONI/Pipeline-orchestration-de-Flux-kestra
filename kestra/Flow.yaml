@@ -1,0 +1,36 @@
+id: bottleneck_pipeline
+namespace: dev.bottleneck
+
+description: "Pipeline BottleNeck : Automatisation du nettoyage et analyse Z-Score"
+
+triggers:
+  - id: monthly_schedule
+    type: io.kestra.plugin.core.trigger.Schedule
+    cron: "0 9 15 * *"
+
+tasks:
+  - id: processing_data
+    type: io.kestra.plugin.scripts.python.Commands
+    taskRunner:
+      type: io.kestra.plugin.scripts.runner.docker.Docker
+    containerImage: python:3.12-slim
+    namespaceFiles:
+      enabled: true
+    commands:
+      # AJOUT DE DUCKDB ICI
+      - pip install pandas openpyxl duckdb
+      - python scripts/clean_erp.py
+      - python scripts/clean_web.py
+      - python scripts/clean_liaison.py
+      - python scripts/merge_data.py
+      - python scripts/compute_revenue.py
+      - python scripts/detect_millesimes.py
+    
+    outputFiles:
+      - "*.csv"
+      - "revenue_data.csv"
+      - "vins_millesimes.csv"
+
+  - id: success_log
+    type: io.kestra.plugin.core.log.Log
+    message: "Pipeline BottleNeck terminé. {{ taskrun.id }}"
