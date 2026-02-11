@@ -124,13 +124,21 @@ Le pipeline se compose des étapes suivantes :
 - Exécution automatique mensuelle
 - Résultats conformes aux attentes métier
 
-## 👤 Auteur
+# 👤 Owner
+
+<h1 align="center">Hi 👋, I'm khalid</h1>
+<h3 align="center">Data analyst & Data engineer || Power BI and Qlik sense developer</h3>
+
+- 👨‍💻 All of my projects are available at [https://github.com/lidoni?tab=repositories](https://github.com/lidoni?tab=repositories)
+
+- 📄You can see my presentations in my linkedin posts [https://www.linkedin.com/in/khalid-ouro-adoyi/](https://www.linkedin.com/in/khalid-ouro-adoyi/)
 
 Ce projet a été réalisé par :
 
 **khalid OURO-ADOYI**  
 
-Ingénieur Data | Développeur Power BI ,Qlik sense 
+Data & Cloud Engineer | Développeur Power BI ,Qlik sense 
 
 📧 Email : khalidouroadoyi@gmail.com
 🔗 [LinkedIn](https://www.linkedin.com/in/khalid-ouro-adoyi/) | [GitHub](https://github.com/LIDONI)
+- 📫 How to reach me **khalidouroadoyi@gmail.com**
