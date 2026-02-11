@@ -123,3 +123,14 @@ Le pipeline se compose des étapes suivantes :
 - Tests intégrés pour garantir la qualité
 - Exécution automatique mensuelle
 - Résultats conformes aux attentes métier
+
+## 👤 Auteur
+
+Ce projet a été réalisé par :
+
+**khalid OURO-ADOYI**  
+
+Ingénieur Data | Développeur Power BI ,Qlik sense 
+
+📧 Email : khalidouroadoyi@gmail.com
+🔗 [LinkedIn](https://www.linkedin.com/in/khalid-ouro-adoyi/) | [GitHub](https://github.com/LIDONI)
